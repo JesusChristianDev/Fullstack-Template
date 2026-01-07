@@ -131,13 +131,15 @@ security definer
 as $$
 declare
   new_league_id uuid;
-  email text;
+  v_email text;
 begin
-  insert into public.leagues(name) values (league_name) returning id into new_league_id;
+  insert into public.leagues(name)
+  values (league_name)
+  returning id into new_league_id;
 
-  foreach email in array allowed_emails loop
+  foreach v_email in array allowed_emails loop
     insert into public.allowlist_emails(email)
-    values (email)
+    values (v_email)
     on conflict (email) do nothing;
   end loop;
 
