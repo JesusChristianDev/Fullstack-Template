@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.0.0",
+  "game": "Jump Force",
+  "generated_at": "2026-01-07",
+  "notes": [
+    "Roster/series/DLC flags are based on the publicly documented playable roster (57 characters).",
+    "The 'heuristics' block is a starter tuning set for your team-recommendation engine; adjust after playtesting."
+  ],
+  "characters": [
+    {
+      "id": "black_clover__asta",
+      "name": "Asta",
+      "series": "Black Clover",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "bleach__ichigo_kurosaki",
+      "name": "Ichigo Kurosaki",
+      "series": "Bleach",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "bleach__rukia_kuchiki",
+      "name": "Rukia Kuchiki",
+      "series": "Bleach",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "lockdown",
+        "synergy_tags": ["lockdown", "setup", "control"],
+        "team_roles": ["support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "bleach__renji_abarai",
+      "name": "Renji Abarai",
+      "series": "Bleach",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "bleach__sosuke_aizen",
+      "name": "Sōsuke Aizen",
+      "series": "Bleach",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "projectile",
+        "synergy_tags": ["control", "setup", "projectile"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "bleach__toshiro_hitsugaya",
+      "name": "Tōshirō Hitsugaya",
+      "series": "Bleach",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "lockdown",
+        "synergy_tags": ["lockdown", "control", "setup"],
+        "team_roles": ["support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "bleach__grimmjow_jaegerjaquez",
+      "name": "Grimmjow Jaegerjaquez",
+      "series": "Bleach",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage", "mobility"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "bleach__yoruichi_shihoin",
+      "name": "Yoruichi Shihōin",
+      "series": "Bleach",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 2 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "mobility", "pressure"],
+        "team_roles": ["point", "support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "boruto_naruto_next_generations__boruto_uzumaki",
+      "name": "Boruto Uzumaki",
+      "series": "Boruto: Naruto Next Generations",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "mobility"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "city_hunter__ryo_saeba",
+      "name": "Ryo Saeba",
+      "series": "City Hunter",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "projectile",
+        "synergy_tags": ["projectile", "control"],
+        "team_roles": ["support"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "dragon_ball__son_goku",
+      "name": "Son Goku",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "damage", "entry"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "dragon_ball__vegeta",
+      "name": "Vegeta",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "dragon_ball__trunks",
+      "name": "Trunks",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "projectile",
+        "synergy_tags": ["damage", "entry"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "dragon_ball__piccolo",
+      "name": "Piccolo",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "control"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "dragon_ball__frieza",
+      "name": "Frieza",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "projectile",
+        "synergy_tags": ["projectile", "control", "beam"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "dragon_ball__cell",
+      "name": "Cell",
+      "series": "Dragon Ball",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "projectile",
+        "synergy_tags": ["damage", "control"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "dragon_ball__majin_buu",
+      "name": "Majin Buu",
+      "series": "Dragon Ball",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "grappler",
+        "assist_profile": "utility",
+        "synergy_tags": ["pressure", "damage", "tank"],
+        "team_roles": ["anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "dragon_quest_the_adventure_of_dai__dai",
+      "name": "Dai",
+      "series": "Dragon Quest: The Adventure of Dai",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "fist_of_the_north_star__kenshiro",
+      "name": "Kenshiro",
+      "series": "Fist of the North Star",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+
+    {
+      "id": "hunter_hunter__gon_freecss",
+      "name": "Gon Freecss",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "hunter_hunter__killua_zoldyck",
+      "name": "Killua Zoldyck",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["mobility", "entry"],
+        "team_roles": ["point"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "hunter_hunter__kurapika",
+      "name": "Kurapika",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "lockdown",
+        "synergy_tags": ["control", "lockdown", "counter"],
+        "team_roles": ["support"],
+        "difficulty": 4
+      }
+    },
+    {
+      "id": "hunter_hunter__hisoka_morow",
+      "name": "Hisoka Morow",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "trap",
+        "synergy_tags": ["setup", "trap", "control"],
+        "team_roles": ["support"],
+        "difficulty": 4
+      }
+    },
+    {
+      "id": "hunter_hunter__biscuit_krueger",
+      "name": "Biscuit Krueger",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "utility",
+        "synergy_tags": ["damage", "control"],
+        "team_roles": ["point", "support"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "hunter_hunter__meruem",
+      "name": "Meruem",
+      "series": "Hunter × Hunter",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 2 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["damage", "pressure"],
+        "team_roles": ["anchor"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "jojo_s_bizarre_adventure__jotaro_kujo",
+      "name": "Jotaro Kujo",
+      "series": "JoJo's Bizarre Adventure",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "jojo_s_bizarre_adventure__dio",
+      "name": "DIO",
+      "series": "JoJo's Bizarre Adventure",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "trap",
+        "synergy_tags": ["control", "setup", "pressure"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "jojo_s_bizarre_adventure__giorno_giovanna",
+      "name": "Giorno Giovanna",
+      "series": "JoJo's Bizarre Adventure",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 2 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "trap",
+        "synergy_tags": ["setup", "control"],
+        "team_roles": ["support"],
+        "difficulty": 5
+      }
+    },
+
+    {
+      "id": "my_hero_academia__izuku_midoriya",
+      "name": "Izuku Midoriya",
+      "series": "My Hero Academia",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "my_hero_academia__all_might",
+      "name": "All Might",
+      "series": "My Hero Academia",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["damage", "entry", "pressure"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "my_hero_academia__katsuki_bakugo",
+      "name": "Katsuki Bakugo",
+      "series": "My Hero Academia",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "projectile",
+        "synergy_tags": ["pressure", "mobility", "projectile"],
+        "team_roles": ["point"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "my_hero_academia__shoto_todoroki",
+      "name": "Shoto Todoroki",
+      "series": "My Hero Academia",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 2 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "lockdown",
+        "synergy_tags": ["beam", "lockdown", "control"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "naruto__naruto_uzumaki",
+      "name": "Naruto Uzumaki",
+      "series": "Naruto",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "naruto__sasuke_uchiha",
+      "name": "Sasuke Uchiha",
+      "series": "Naruto",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "control", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "naruto__kakashi_hatake",
+      "name": "Kakashi Hatake",
+      "series": "Naruto",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "projectile",
+        "synergy_tags": ["control", "counter"],
+        "team_roles": ["support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "naruto__gaara",
+      "name": "Gaara",
+      "series": "Naruto",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "trap",
+        "synergy_tags": ["control", "trap", "projectile"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "naruto__kaguya_otsutsuki",
+      "name": "Kaguya Ōtsutsuki",
+      "series": "Naruto",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "projectile",
+        "synergy_tags": ["control", "projectile", "damage"],
+        "team_roles": ["anchor"],
+        "difficulty": 4
+      }
+    },
+    {
+      "id": "naruto__madara_uchiha",
+      "name": "Madara Uchiha",
+      "series": "Naruto",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "control", "damage"],
+        "team_roles": ["anchor", "support"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "one_piece__monkey_d_luffy",
+      "name": "Monkey D. Luffy",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "one_piece__roronoa_zoro",
+      "name": "Roronoa Zoro",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "one_piece__sanji",
+      "name": "Sanji",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["mobility", "entry"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "one_piece__sabo",
+      "name": "Sabo",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "projectile",
+        "synergy_tags": ["projectile", "damage"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "one_piece__boa_hancock",
+      "name": "Boa Hancock",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "projectile",
+        "synergy_tags": ["control", "projectile", "setup"],
+        "team_roles": ["support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "one_piece__blackbeard",
+      "name": "Blackbeard",
+      "series": "One Piece",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "grappler",
+        "assist_profile": "projectile",
+        "synergy_tags": ["control", "pressure", "projectile"],
+        "team_roles": ["anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "one_piece__trafalgar_d_water_law",
+      "name": "Trafalgar D. Water Law",
+      "series": "One Piece",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "lockdown",
+        "synergy_tags": ["control", "setup", "damage"],
+        "team_roles": ["point", "support"],
+        "difficulty": 4
+      }
+    },
+
+    {
+      "id": "rurouni_kenshin__himura_kenshin",
+      "name": "Himura Kenshin",
+      "series": "Rurouni Kenshin",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "pressure"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "rurouni_kenshin__shishio_makoto",
+      "name": "Shishio Makoto",
+      "series": "Rurouni Kenshin",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["pressure", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "saint_seiya__pegasus_seiya",
+      "name": "Pegasus Seiya",
+      "series": "Saint Seiya",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["entry", "damage"],
+        "team_roles": ["point"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "saint_seiya__dragon_shiryu",
+      "name": "Dragon Shiryū",
+      "series": "Saint Seiya",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "utility",
+        "synergy_tags": ["damage", "tank"],
+        "team_roles": ["anchor"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "yu_gi_oh__yugi_muto_yami_yugi",
+      "name": "Yugi Muto / Yami Yugi",
+      "series": "Yu-Gi-Oh!",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "trap",
+        "synergy_tags": ["setup", "trap", "projectile"],
+        "team_roles": ["support"],
+        "difficulty": 5
+      }
+    },
+    {
+      "id": "yu_gi_oh__seto_kaiba",
+      "name": "Seto Kaiba",
+      "series": "Yu-Gi-Oh!",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 1 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "zoner",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "projectile", "control"],
+        "team_roles": ["support"],
+        "difficulty": 2
+      }
+    },
+
+    {
+      "id": "yuyu_hakusho__yusuke_urameshi",
+      "name": "Yusuke Urameshi",
+      "series": "YuYu Hakusho",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "damage"],
+        "team_roles": ["point", "support"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "yuyu_hakusho__younger_toguro",
+      "name": "Younger Toguro",
+      "series": "YuYu Hakusho",
+      "availability": { "type": "base", "source": "launch_roster" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "grappler",
+        "assist_profile": "rush",
+        "synergy_tags": ["damage", "pressure", "tank"],
+        "team_roles": ["anchor"],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "yuyu_hakusho__hiei",
+      "name": "Hiei",
+      "series": "YuYu Hakusho",
+      "availability": { "type": "dlc", "source": "character_pass", "pass": 2 },
+      "is_dlc": true,
+      "heuristics": {
+        "archetype": "rushdown",
+        "assist_profile": "rush",
+        "synergy_tags": ["mobility", "damage"],
+        "team_roles": ["point", "anchor"],
+        "difficulty": 3
+      }
+    },
+
+    {
+      "id": "jump_force_original__galena",
+      "name": "Galena",
+      "series": "Jump Force (Original)",
+      "availability": { "type": "free_update", "source": "post_launch_update" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "trap",
+        "synergy_tags": ["control", "setup"],
+        "team_roles": ["support"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "jump_force_original__kane",
+      "name": "Kane",
+      "series": "Jump Force (Original)",
+      "availability": { "type": "free_update", "source": "post_launch_update" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "balanced",
+        "assist_profile": "rush",
+        "synergy_tags": ["damage", "pressure"],
+        "team_roles": ["anchor"],
+        "difficulty": 3
+      }
+    },
+    {
+      "id": "jump_force_original__prometheus",
+      "name": "Prometheus",
+      "series": "Jump Force (Original)",
+      "availability": { "type": "free_update", "source": "post_launch_update" },
+      "is_dlc": false,
+      "heuristics": {
+        "archetype": "technical",
+        "assist_profile": "beam",
+        "synergy_tags": ["beam", "control", "setup"],
+        "team_roles": ["support", "anchor"],
+        "difficulty": 4
+      }
+    }
+  ]
+}

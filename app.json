@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Jump Force Companion",
+    "slug": "jump-force-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0b10"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0b10"
+      }
+    }
+  }
+}
