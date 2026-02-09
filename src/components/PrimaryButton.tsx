@@ -21,25 +21,25 @@ const PrimaryButton = ({ label, onPress, disabled, variant = 'primary' }: Props)
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#7c4dff',
+    backgroundColor: '#d97c7c',
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 999,
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#7c4dff',
+    shadowColor: '#d97c7c',
     shadowOpacity: 0.4,
     shadowRadius: 12,
     shadowOffset: { width: 0, height: 6 }
   },
   secondary: {
-    backgroundColor: '#232338'
+    backgroundColor: '#f0dcd6'
   },
   disabled: {
     opacity: 0.4
   },
   text: {
-    color: '#f5f5f7',
+    color: '#2a1e1a',
     fontWeight: '600',
     fontSize: 16
   }
