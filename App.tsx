@@ -9,7 +9,7 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <QueryClientProvider client={queryClient}>
-        <StatusBar style="light" />
+        <StatusBar style="dark" />
         <RootNavigator />
       </QueryClientProvider>
     </GestureHandlerRootView>
