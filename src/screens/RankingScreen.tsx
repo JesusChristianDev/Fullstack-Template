@@ -1,84 +1,110 @@
-import { View, Text, StyleSheet } from 'react-native';
-import { useQuery } from '@tanstack/react-query';
-import { fetchPlayerStats } from '../supabase/queries';
-
-const leagueId = process.env.EXPO_PUBLIC_LEAGUE_ID ?? '';
+import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { services, stylists } from '../data/salonData';
 
 const RankingScreen = () => {
-  const { data: stats } = useQuery({
-    queryKey: ['player-stats', leagueId],
-    queryFn: () => fetchPlayerStats(leagueId),
-    enabled: Boolean(leagueId)
-  });
-
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Ranking</Text>
+    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Text style={styles.title}>Servicios premium</Text>
+      <Text style={styles.subtitle}>Todo lo que necesitas para renovar tu estilo.</Text>
+
       <View style={styles.list}>
-        {stats?.map((stat, index) => {
-          const winrate = stat.games ? Math.round((stat.wins / stat.games) * 100) : 0;
-          return (
-            <View key={stat.user_id} style={styles.card}>
-              <Text style={styles.rank}>#{index + 1}</Text>
-              <View style={styles.info}>
-                <Text style={styles.name}>{stat.user_id.slice(0, 6)}</Text>
-                <Text style={styles.muted}>
-                  {stat.wins}W / {stat.losses}L · {winrate}% WR
-                </Text>
-              </View>
-              <Text style={styles.elo}>{stat.elo}</Text>
-            </View>
-          );
-        })}
+        {services.map((service) => (
+          <View key={service.id} style={styles.card}>
+            <Text style={styles.cardTitle}>{service.name}</Text>
+            <Text style={styles.cardMeta}>
+              {service.duration} · {service.price}
+            </Text>
+            <Text style={styles.cardText}>{service.description}</Text>
+          </View>
+        ))}
       </View>
-    </View>
+
+      <View style={styles.teamSection}>
+        <Text style={styles.sectionTitle}>Nuestro equipo</Text>
+        {stylists.map((stylist) => (
+          <View key={stylist.id} style={styles.teamCard}>
+            <View>
+              <Text style={styles.teamName}>{stylist.name}</Text>
+              <Text style={styles.teamText}>{stylist.specialties}</Text>
+            </View>
+            <Text style={styles.teamRating}>★ {stylist.rating}</Text>
+          </View>
+        ))}
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0b0b10',
-    padding: 24
+    backgroundColor: '#f6f1ee'
+  },
+  content: {
+    padding: 24,
+    gap: 16
   },
   title: {
-    color: '#f5f5f7',
-    fontSize: 24,
+    color: '#2a1e1a',
+    fontSize: 26,
     fontWeight: '700'
   },
+  subtitle: {
+    color: '#6e5c57'
+  },
   list: {
-    marginTop: 16,
+    marginTop: 8,
     gap: 12
   },
   card: {
-    backgroundColor: '#141420',
+    backgroundColor: '#fff',
     padding: 16,
     borderRadius: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     borderWidth: 1,
-    borderColor: '#1f1f2e'
+    borderColor: '#f0dcd6'
   },
-  rank: {
-    color: '#7c4dff',
-    fontWeight: '700'
-  },
-  info: {
-    flex: 1,
-    marginLeft: 12
-  },
-  name: {
-    color: '#f5f5f7',
+  cardTitle: {
+    color: '#2a1e1a',
     fontWeight: '600'
   },
-  muted: {
-    color: '#9aa0a6',
+  cardMeta: {
+    color: '#a1847e',
+    marginTop: 6
+  },
+  cardText: {
+    color: '#6e5c57',
+    marginTop: 8,
+    lineHeight: 20
+  },
+  teamSection: {
+    marginTop: 16,
+    gap: 12
+  },
+  sectionTitle: {
+    color: '#2a1e1a',
+    fontSize: 18,
+    fontWeight: '600'
+  },
+  teamCard: {
+    backgroundColor: '#fff',
+    padding: 14,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: '#f0dcd6',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  teamName: {
+    color: '#2a1e1a',
+    fontWeight: '600'
+  },
+  teamText: {
+    color: '#6e5c57',
     marginTop: 4
   },
-  elo: {
-    color: '#f5f5f7',
-    fontSize: 18,
+  teamRating: {
+    color: '#d97c7c',
     fontWeight: '700'
   }
 });

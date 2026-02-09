@@ -15,11 +15,11 @@ const navTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#0b0b10',
-    card: '#141420',
-    text: '#f5f5f7',
-    border: '#1e1e2a',
-    primary: '#7c4dff'
+    background: '#f6f1ee',
+    card: '#ffffff',
+    text: '#2a1e1a',
+    border: '#f0dcd6',
+    primary: '#d97c7c'
   }
 };
 
@@ -28,14 +28,14 @@ const TabNavigator = () => {
     <Tabs.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarStyle: { backgroundColor: '#141420', borderTopColor: '#1e1e2a' },
-        tabBarActiveTintColor: '#7c4dff',
-        tabBarInactiveTintColor: '#9aa0a6'
+        tabBarStyle: { backgroundColor: '#ffffff', borderTopColor: '#f0dcd6' },
+        tabBarActiveTintColor: '#d97c7c',
+        tabBarInactiveTintColor: '#8a7a75'
       }}
     >
-      <Tabs.Screen name="Duels" component={DuelsScreen} />
-      <Tabs.Screen name="Ranking" component={RankingScreen} />
-      <Tabs.Screen name="History" component={HistoryScreen} />
+      <Tabs.Screen name="Booking" component={DuelsScreen} options={{ tabBarLabel: 'Reservar' }} />
+      <Tabs.Screen name="Services" component={RankingScreen} options={{ tabBarLabel: 'Servicios' }} />
+      <Tabs.Screen name="Agenda" component={HistoryScreen} options={{ tabBarLabel: 'Agenda' }} />
     </Tabs.Navigator>
   );
 };
@@ -44,10 +44,10 @@ const RootNavigator = () => {
   return (
     <NavigationContainer theme={navTheme}>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Auth" component={AuthScreen} />
+        <Stack.Screen name="Welcome" component={AuthScreen} />
         <Stack.Screen name="AppTabs" component={TabNavigator} />
-        <Stack.Screen name="Result" component={ResultScreen} />
-        <Stack.Screen name="MatchDetail" component={MatchDetailScreen} />
+        <Stack.Screen name="Confirmation" component={ResultScreen} />
+        <Stack.Screen name="AppointmentDetail" component={MatchDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
